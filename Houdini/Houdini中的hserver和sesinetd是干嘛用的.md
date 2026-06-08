@@ -1,4 +1,4 @@
-# Houdini中的hserver和sesinetd是干嘛用的？
+# Houdini中的hserver和sesinetd是干嘛用的
 ---
 **sesinetd（许可证服务器）**：负责管理所有许可证的发放与回收。
 **hserver（客户端代理）**：Houdini客户端通过hserver向许可证服务器申请许可证和归还许可证。

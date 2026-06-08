@@ -8,7 +8,7 @@ Carve 节点适用于任何表面（Face）或曲面（Surface）类型的基元
 通过设置 First U=0, Second U=1 可以截取截面上的一段。（很有用）
 
 ##### 3. Cut（切割）
-可以把截取的截面的边缘线段切成小段。（最没用，不如 Resample 节点）
+可以把截面（单个基元）的每一段边缘切割成一个基元。（操作线段时有用，例如：栏杆）
 
 **注意：** Carve 节点会把闭合的面转换成开放的面，导致面不再被渲染。可以通过 Geometry Spreadsheet 的 Primitive 页签中的 intrinsics:closed 属性查看基元的开闭性。处理后的基元类型可以通过 intrinstics:typename 查看。
 

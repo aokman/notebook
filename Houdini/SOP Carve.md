@@ -1,5 +1,5 @@
 #### Carve 节点的用途
-Carve 节点适用于任何表面（Face）或曲面（Surface）类型的基元（Primitive），无论是多边形、Bezier 亦或是 NURBS。该节点在这些基元的参数域 (U/V) 上截取横截面，并进行后续操作：
+Carve 节点适用于任何表面（Face）或曲面（Surface）类型的基元（Primitive），无论是多边形、Bezier 亦或是 NURBS。该节点对**每个**从Geometry Spreadsheet输入的基元的参数域 (U/V) 上截取横截面，并进行后续操作：
 
 ##### 1. Slice（截取）
 可以从表面或曲面上截取横截面，并通过设置 First U=0, Second U=1 可以截取横截面上的一段。

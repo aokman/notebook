@@ -7,6 +7,16 @@
 Houdini的循环是通过 Block Begin 和 Block End 两个节点实现的。根据两个节点的参数选择不同分为 For-Loop 和 For-Each 两类。在网络编辑器的Tab菜单中内置了常用的循环节点设置。
 
 ##### For-Loop
-在指定物件上，重复执行一组操作，直至指定次数。
-
+在指定物体上，重复执行一组操作，直至指定次数。此时，
+1、输入端 Block Begin 节点的 Method 参数只能选：
+① Fetch Feedback：每次循环计算基于上次的计算结果
+② Fetch Input：每次循环计算基于原始输入数据
+2、输出端 Block End 节点的 Iteration Method 参数只能选：
+① By Count：用数字自定义循环次数
+ 
 ##### For-Each
+对指定物体的分件和控点，
+
+输出端 Block End 节点的 Gather Method 参数：
+1、Feedback Each Iteration：输出最后一次循环计算的结果
+2、Merge Each Iteration：输出合并每次循环计算的结果
